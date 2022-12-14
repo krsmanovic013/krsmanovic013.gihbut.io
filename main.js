@@ -315,7 +315,7 @@ const nizPlaceholders = new Array(
 const nizIspisGreske = new Array(
   "First and Last name must start with uppercase (John Smith ...)",
   "Email must be in format me@example.com",
-  "Must contain minimum 1 char 1 uppercase and 1 number",
+  "Min 1 char 1 uppercase and 1 number length 6",
   "Passwords must match"
 );
 
