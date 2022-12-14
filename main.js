@@ -34,7 +34,7 @@ window.addEventListener("scroll", () => {
 const slides = document.querySelectorAll(".video-slide");
 // console.log(slides);
 var slideIndex = 0;
-//slideShow();
+slideShow();
 function slideShow() {
   for (let i = 0; i < slides.length; i++) {
     slides[i].classList.add("none");
