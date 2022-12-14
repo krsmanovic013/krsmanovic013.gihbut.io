@@ -315,7 +315,7 @@ const nizPlaceholders = new Array(
 const nizIspisGreske = new Array(
   "First and Last name must start with uppercase (John Smith ...)",
   "Email must be in format me@example.com",
-  "Min 1 char 1 uppercase and 1 number length 6",
+  "Min 1 special char 1 uppercase and 1 number min length 6",
   "Passwords must match"
 );
 
@@ -520,7 +520,7 @@ let ispisFooter = `
 
 for (let i = 0; i < hrefSocials.length; i++) {
   ispisFooter += `
-  <a href="https://https://www.${hrefSocials[i]}.com"><i class="${classSocials[i]}"></i></a>`;
+  <a href="https://www.${hrefSocials[i]}.com"><i class="${classSocials[i]}"></i></a>`;
 }
 ispisFooter += `
             </div>
