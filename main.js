@@ -64,19 +64,12 @@ const menuHref = new Array(
   "#testimonial-section",
   "#cta"
 );
-// let menuIspis = `<i class="fa fa-hamburger display-none"></i>`;
-// menuIspis += `<ul>`;
-// for (let i = 0; i < menuTekst.length; i++) {
-//   menuIspis += `<li><a href="${menuHref[i]}">${menuTekst[i]}</a></li>`;
-// }
-// menuIspis += `</ul>`;
 
 let menuIspis = `<ul>`;
 for (let i = 0; i < menuTekst.length; i++) {
   menuIspis += `<li><a href="${menuHref[i]}">${menuTekst[i]}</a></li>`;
 }
 menuIspis += `</ul>`;
-// console.log(menuIspis);
 
 const navDiv = document.querySelector(".nav");
 navDiv.innerHTML = menuIspis;
@@ -563,7 +556,7 @@ const footerObjectHref = [
     cetvrti: "#",
   },
   {
-    prvi: "#",
+    prvi: "Dokumentacija.pdf",
     drugi: "author.html",
     treci: "sitemap.xml",
     cetvrti: "robots.txt",
@@ -629,6 +622,7 @@ const objTopDest = [
     hiden: "Average price per night 100$",
   },
 ];
+
 const nizTopDestSrc = new Array("bora-bora.jpg", "bali.jpg", "zanzibar.jpg");
 let ispisTopDest = "";
 for (let i = 0; i < objTopDest.length; i++) {
