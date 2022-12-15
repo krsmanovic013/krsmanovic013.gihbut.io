@@ -678,4 +678,4 @@ for (let i = 0; i < liTagovi.length; i++) {
     $("#iks").toggleClass("close");
   });
 }
-//Gasenje mobilne nav kad se klikne na link - end
+//Gasenje mobilne nav kad se klikne na link -- end
