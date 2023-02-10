@@ -633,10 +633,10 @@ for (let i = 0; i < objTopDest.length; i++) {
         <p>
           ${objTopDest[i].p}
         </p>
-          <p class="aditional-info${i} display-none">
+          <p class="aditional-info display-none">
              ${objTopDest[i].hiden}
           </p>
-        <span class="showMore${i}">Read more...</span>
+        <span class="showMore">Read more...</span>
     </div>
   `;
 }
@@ -644,22 +644,8 @@ const divTopDest = document.querySelector("#top-destinations");
 divTopDest.innerHTML = ispisTopDest;
 //Read more - read less (radi ali nije optimizovan)
 $(document).ready(function () {
-  $(".showMore0").click(function () {
-    $(".aditional-info0").slideToggle();
-
-    $(this).text() === "Read more..."
-      ? $(this).text("Read less...")
-      : $(this).text("Read more...");
-  });
-  $(".showMore1").click(function () {
-    $(".aditional-info1").slideToggle();
-
-    $(this).text() === "Read more..."
-      ? $(this).text("Read less...")
-      : $(this).text("Read more...");
-  });
-  $(".showMore2").click(function () {
-    $(".aditional-info2").slideToggle();
+  $(".showMore").click(function () {
+    $(this).prev().slideToggle();
 
     $(this).text() === "Read more..."
       ? $(this).text("Read less...")
